@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Noktalisayi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sayi.cs" />
+    <Compile Include="Tamsayi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

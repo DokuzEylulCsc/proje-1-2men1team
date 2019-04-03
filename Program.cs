@@ -10,6 +10,12 @@ namespace dosyadaki_hakikat
     {
         static void Main(string[] args)
         {
+            //test meretleri
+            Tamsayi patates = new Tamsayi("1");
+            Noktalisayi test = new Noktalisayi("2.3");
+            Console.WriteLine(patates.Deger);
+            Console.WriteLine(test.Deger);
+            Console.ReadLine();
         }
     }
 }
