@@ -8,14 +8,11 @@ namespace dosyadaki_hakikat
 {
     class Noktalisayi : Sayi
     {
-        private double deger;
-
-        public double Deger { get => deger; }
 
         public Noktalisayi(String yenigirdi)
         {
             this.Girdi = yenigirdi;
-            this.deger = Double.Parse(Girdi);
+            this.Deger = Double.Parse(Girdi);
         }
     }
 }

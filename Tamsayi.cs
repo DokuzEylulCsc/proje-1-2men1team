@@ -8,14 +8,12 @@ namespace dosyadaki_hakikat
 {
     class Tamsayi : Sayi
     {
-        private int deger;
-
-        public int Deger { get => deger;}
-
+        //tam sayi ve noktali sayi classlari ozunde aynı ama whatever en kotu loglarda ikisinin de yuzdesini verebiliris
+,
         public Tamsayi(String yenigirdi)
         {
             this.Girdi = yenigirdi;
-            this.deger = Int32.Parse(Girdi);
+            this.Deger = Double.Parse(Girdi);
         }
 
         
