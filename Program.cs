@@ -36,6 +36,18 @@ namespace dosyadaki_hakikat
             Console.WriteLine(test2.Deger);
             InSort sortedthing = new InSort(dickweed);
             Console.WriteLine(sortedthing.Sorted);
+
+            try
+            {
+                Dosya_Islemleri.Read_File(args[0]);
+            }
+            catch
+            {
+                Console.WriteLine("dosyadaki_hakikat.exe dosyakonumu");
+            }
+
+
+            
             Console.ReadLine();
             // test meretleri son
 

@@ -8,32 +8,34 @@ using System.IO;
 namespace dosyadaki_hakikat
 {
     class Dosya_Islemleri
-    {
-        public static void Paramcontrol()
-        {
 
-        }
+    {
+
+        static private string[] lines;
+
+        public string[] Lines { get => lines;}
+        
 
       
 
-        public static void Read_File()
-        {
-            string text = System.IO.File.ReadAllText(@"C:\Users\Arty0m\Desktop\aq.txt"); 
+        public static void Read_File(String dest)
+        {            
             // Okunacak text dosyası yolu
+                       
 
-           string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Public\TestFolder\WriteLines2.txt");
-
-            //  
-            System.Console.WriteLine("Contents of WriteLines2.txt = ");
-
-            foreach (string line in lines)
+            try{
+                lines = File.ReadAllLines(dest);
+               
+            }
+            catch (Exception except)
             {
-              
-                Console.WriteLine("\n" + line);
+                Console.WriteLine(except);
+                String newthing = Console.ReadLine();
+                Read_File(newthing);
             }
 
-            Console.WriteLine("Press any key to exit.");
-            System.Console.ReadKey();
+
+
         }
     }
 }

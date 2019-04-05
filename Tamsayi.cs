@@ -13,6 +13,7 @@ namespace dosyadaki_hakikat
         public Tamsayi(String yenigirdi)
         {
             this.Girdi = yenigirdi;
+
             this.Deger = Double.Parse(Girdi);
         }
 
