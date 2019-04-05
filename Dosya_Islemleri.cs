@@ -12,12 +12,7 @@ namespace dosyadaki_hakikat
 
     {
 
-        static private string[] lines;
-
-    //    public string[] Lines { get => lines;}
-        
-
-      
+        static private string[] lines; //{ get => lines; set => lines = value; }        
 
         public static void Read_File(String dest)
         {            
@@ -35,21 +30,28 @@ namespace dosyadaki_hakikat
             }
         }
 
-        static void findstuff(String[] stuff)
+        static List<string> findstuff(String[] stuff)//sayıları eleyen fonksiyon sadece bu class icinde cagirilsin
         {
-            
+            int count = 0;
+            List<string> numbers = new List<string>();
+
             foreach (string a in stuff)
             {
-                if (Regex.IsMatch(a, @"^-?[0-9]\d*(\.\d+)?$"))
+                if (Regex.IsMatch(a, @"^-?[0-9]\d*(\.\d+)?$"))//kara buyu ile sayıları ayırt et 
                 {
+                    count = count + 1;
                     Console.WriteLine(a);
+                    numbers.Add(a);
                 }
-
             }
+            Console.WriteLine(stuff.Length.ToString() + " satir icinden ");
+            Console.WriteLine(count.ToString() +  " sayi bulundu ");
+            Console.WriteLine("%" + ((count / stuff.Length) * 100).ToString() + " sayi");
+             
+
             Console.ReadLine();
 
-
-            
+            return numbers;
         }
 
 
