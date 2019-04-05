@@ -9,17 +9,35 @@ namespace dosyadaki_hakikat
 {
     class Dosya_Islemleri
     {
-
-
-
-
-
-
-        public static void Dosyaoku(string doc_path)
+        public static void Paramcontrol()
         {
-            FileStream fileStream = new FileStream(doc_path, FileMode.Open, FileAccess.Read);
-            StreamReader swstream = new StreamReader(fileStream);
 
+        }
+
+      
+
+        public static void Read_File()
+        {
+            string text = System.IO.File.ReadAllText(@"C:\Users\Arty0m\Desktop\aq.txt"); 
+            // Okunacak text dosyası yolu
+
+           string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Public\TestFolder\WriteLines2.txt");
+
+            //  
+            System.Console.WriteLine("Contents of WriteLines2.txt = ");
+
+            foreach (string line in lines)
+            {
+              
+                Console.WriteLine("\n" + line);
+            }
+
+            Console.WriteLine("Press any key to exit.");
+            System.Console.ReadKey();
         }
     }
 }
+
+
+
+ 
