@@ -43,7 +43,8 @@ namespace dosyadaki_hakikat
             }
             catch
             {
-                Console.WriteLine("dosyadaki_hakikat.exe dosyakonumu");
+                Console.WriteLine("Lütfen dosya konumu giriniz");
+                Dosya_Islemleri.Read_File("");
             }
 
 
