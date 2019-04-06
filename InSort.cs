@@ -14,6 +14,7 @@ namespace dosyadaki_hakikat
             }
         }//disaridan sorted sadece okunmalı 
 
+
         public InSort(List<Tamsayi> girdi)
         {           
             foreach (Tamsayi i in girdi)//sayi listindeki her elemanın degerini al listeye ekle pdf nedenlerinden dolayi tek bir sayi girdisi yerine tamsayi ve noktali sayı ayri <polymorphism yeeeeey>

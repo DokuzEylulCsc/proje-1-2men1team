@@ -1,25 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace dosyadaki_hakikat
 {
     class Program
     {
         static void Main(string[] args)
         {
+            string[] sinesfromfile;
+            
+
             //test meretleri silmeyi unutma
             try
             {
-                Dosya_Islemleri.Read_File(args[0]);
+                sinesfromfile = Dosya_Islemleri.Read_File(args[0]);
+                //sinesfromfile = Dosya_Islemleri.Read_File(");
             }
             catch
             {
-                Dosya_Islemleri.Read_File("");
+                sinesfromfile = Dosya_Islemleri.Read_File("");
             }
+
+            Dosya_Islemleri.sendtosort(Dosya_Islemleri.findstuff(sinesfromfile));
+          //  InSort sorter = new InSort(Dosya_Islemleri.Tamlist);
+          //  sorter(Dosya_Islemleri.Noktalilist);
             Console.ReadLine();
+
             // test meretleri son
         }
     }
