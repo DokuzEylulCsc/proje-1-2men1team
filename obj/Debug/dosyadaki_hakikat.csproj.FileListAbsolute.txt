@@ -5,3 +5,10 @@ C:\Users\IEUser\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.csprojAsse
 C:\Users\IEUser\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.csproj.CoreCompileInputs.cache
 C:\Users\IEUser\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.exe
 C:\Users\IEUser\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.pdb
+C:\Users\Arty0m\Desktop\proje-1-2men1team\bin\Debug\dosyadaki_hakikat.exe.config
+C:\Users\Arty0m\Desktop\proje-1-2men1team\bin\Debug\dosyadaki_hakikat.exe
+C:\Users\Arty0m\Desktop\proje-1-2men1team\bin\Debug\dosyadaki_hakikat.pdb
+C:\Users\Arty0m\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.csprojAssemblyReference.cache
+C:\Users\Arty0m\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.csproj.CoreCompileInputs.cache
+C:\Users\Arty0m\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.exe
+C:\Users\Arty0m\Desktop\proje-1-2men1team\obj\Debug\dosyadaki_hakikat.pdb
