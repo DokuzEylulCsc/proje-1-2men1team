@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Dosya_Islemleri.cs" />
     <Compile Include="InSort.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Noktalisayi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
