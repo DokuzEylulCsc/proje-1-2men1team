@@ -12,7 +12,7 @@ namespace dosyadaki_hakikat
             try
             {
                 sinesfromfile = Dosya_Islemleri.Read_File(args[0]);
-                //sinesfromfile = Dosya_Islemleri.Read_File(");
+                
             }
             catch
             {
@@ -20,8 +20,9 @@ namespace dosyadaki_hakikat
             }
 
             Dosya_Islemleri.sendtosort(Dosya_Islemleri.findstuff(sinesfromfile));
-          //  InSort sorter = new InSort(Dosya_Islemleri.Tamlist);
-          //  sorter(Dosya_Islemleri.Noktalilist);
+            InSort sorter = new InSort(Dosya_Islemleri.Tamlist, Dosya_Islemleri.Noktalilist);
+            //  sorter(Dosya_Islemleri.Noktalilist);
+            sorter.getsorted();
             Console.ReadLine();
 
             // test meretleri son

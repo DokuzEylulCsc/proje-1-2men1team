@@ -54,7 +54,7 @@ namespace dosyadaki_hakikat
 
             Console.WriteLine(stuff.Length.ToString() + " satir icinden ");
             Console.WriteLine(count.ToString() +  " sayi bulundu ");
-            // Console.WriteLine("%" + ((count / stuff.Length) * 100).ToString() + " sayi");
+            Console.WriteLine("%" + ((count * 1.0 / stuff.Length *1.0) * 100).ToString() + " sayi");
 
 
             Console.ReadLine();
