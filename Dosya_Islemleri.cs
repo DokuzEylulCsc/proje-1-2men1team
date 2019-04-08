@@ -31,8 +31,11 @@ namespace dosyadaki_hakikat
             }
             catch (Exception except)
             {
-                Console.WriteLine(except);
+                //Console.WriteLine(except);
+                Log.newlog(except.ToString());
+                Console.WriteLine("Lutfen dosya yolunu giriniz");
                 String newthing = Console.ReadLine();
+                
                 return Read_File(newthing);
             }
         }
@@ -57,7 +60,7 @@ namespace dosyadaki_hakikat
             Console.WriteLine("%" + ((count * 1.0 / stuff.Length *1.0) * 100).ToString() + " sayi");
 
 
-            Console.ReadLine();
+           //Console.ReadLine();
            // sendtosort(numbers);
 
             return numbers;

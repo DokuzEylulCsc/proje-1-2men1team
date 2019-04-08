@@ -7,6 +7,11 @@ namespace dosyadaki_hakikat
         {
             string[] sinesfromfile;
             
+            if (args.Length >= 2 && args[0] == "-L")
+            {
+                Log.readlogfile(args[1]);//-L ile loglari oku
+                Environment.Exit(0);
+            }
 
            
             try
@@ -14,8 +19,9 @@ namespace dosyadaki_hakikat
                 sinesfromfile = Dosya_Islemleri.Read_File(args[0]);
                 
             }
-            catch
+            catch (Exception exp)
             {
+                Log.newlog(exp.ToString());
                 sinesfromfile = Dosya_Islemleri.Read_File("");
             }
 
